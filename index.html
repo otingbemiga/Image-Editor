@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Editor in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="container disable">
+        <h2>Easy Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brighteness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title">Rotate & Flip</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="image-placeholder.svg" alt="preview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="sec aboutus" id="about-us"> 
+                    <h2>About App</h2>
+                    <p><i> This website allows users to edit and manipulate images directly from their web browsers. This site typically offer a wide range of features and tools for editing photos, such as cropping, resizing, rotating, adding filters and effects, adjusting brightness and contrast, removing backgrounds, retouching, adding text or stickers, and more. </i></p>
+                    <ul class="sci">
+                        <li><a href="https://web.facebook.com/gbengadaniel"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/otingbemiga/"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com/otingbemiga01/"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/otingbemiga/"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="https://www.github.com/otingbemiga/"><i class="bx bxl-github"></i></a></li>
+                    </ul>
+                </div>
+        
+                <!-- <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-us">About</a></li>
+                    </ul>
+                </div> -->
+        
+                <div class="sec contactBx">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="bx bxs-map"></i></span>
+                            <span>154, Allen Avenue <br> Ikeja, <br> Lagos, <br> Nigeria</span>
+                        </li>
+                        <li>
+                            <span><i class="bx bx-envelope"></i></span>
+                            <p><a href="mailto:otingbemiga@gmail.com">otingbemiga@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
